@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.view.PgFile"
+             Title="PgFile">
+    <VerticalStackLayout>
+        <Label 
+            Text="File I/O 範例"
+            FontSize="30"
+            VerticalOptions="Start" 
+            HorizontalOptions="FillAndExpand" />
+        <Label 
+            Text="請輸入資料"
+            FontSize="25"
+            VerticalOptions="Start" 
+            HorizontalOptions="FillAndExpand" 
+            HorizontalTextAlignment="Start"/>
+        <Entry 
+            x:Name="txtSet"
+            FontSize="25"
+            VerticalOptions="Start" 
+            HorizontalOptions="FillAndExpand" 
+            HorizontalTextAlignment="Start"/>
+        <StackLayout Orientation="Horizontal">
+            <Button
+                Clicked="btnSave_Clicked"
+                FontSize="25"
+                Text="Save"
+                HorizontalOptions="FillAndExpand"/>
+            <Button
+                Clicked="btnRead_Clicked"
+                FontSize="25"
+                Text="Read"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <Label 
+            x:Name="labGet"
+            Text="No Data"
+            FontSize="25"
+            VerticalOptions="Start" 
+            HorizontalOptions="FillAndExpand" 
+            HorizontalTextAlignment="Start"/>
+    </VerticalStackLayout>
+</ContentPage>

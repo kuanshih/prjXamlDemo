@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.MainPage">
+    <StackLayout Orientation = "Vertical">
+        <StackLayout 
+            Orientation ="Vertical"
+            VerticalOptions="FillAndExpand">
+            <StackLayout 
+            Orientation ="Horizontal"
+            VerticalOptions="FillAndExpand">
+
+                <Label FontSize="35" Text="A"
+                       x:Name=" labA"
+               Background="	#548C00"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               />
+                <Label FontSize="35" Text="B"
+                       x:Name=" labB"
+               Background="	#5B5B00"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               />
+                <Label FontSize="35" Text="C"
+                       x:Name=" labC"
+               Background="	#796400"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               />
+                <Label FontSize="35" Text="D"
+                       x:Name=" labD"
+               Background="	#9F5000"
+               VerticalOptions="FillAndExpand"
+               HorizontalOptions="FillAndExpand"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               />
+            </StackLayout>
+        </StackLayout>
+        <StackLayout 
+            Orientation ="Vertical"
+            VerticalOptions="FillAndExpand">
+
+            <Label FontSize="35" Text="第一行"
+               VerticalOptions="FillAndExpand"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Start"
+               />
+            <Label FontSize="35" Text="第二行"
+               VerticalOptions="FillAndExpand"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Start"
+               />
+        </StackLayout>
+
+        <StackLayout 
+            Orientation ="Vertical"
+            VerticalOptions="FillAndExpand">
+                
+            <Label FontSize="35" Text="第三行"
+               VerticalOptions="FillAndExpand"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Start"
+               />
+            <Label FontSize="35" Text="第四行"
+               VerticalOptions="FillAndExpand"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Start"
+               />
+
+
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

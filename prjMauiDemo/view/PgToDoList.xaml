@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.view.PgToDoList"
+             Title="PgToDoList">
+    <VerticalStackLayout>
+        <Label 
+            Text="代辦工作一覽表"
+            FontSize="30"
+            TextColor="SeaGreen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <!--<ListView 
+            x:Name="lvtodo" 
+            ItemSelected="lvtodo_ItemSelected"
+            HorizontalOptions="FillAndExpand" 
+            VerticalOptions="FillAndExpand"/>-->
+        <!--這邊要特別加上這一行(SelectionMode="Single")，卡開他可以選取的功能-->
+        <CollectionView
+              x:Name="cvtodo"
+            SelectionMode="Single" 
+           SelectionChanged="cvtodo_SelectionChanged"
+            HorizontalOptions="FillAndExpand" 
+            VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Vertical">
+                        <Label FontSize="40" TextColor="#003D79" Text="{Binding Todo}" Margin="6,0,0,0" />
+                        <Label FontSize="20" TextColor="#0080FF" Text="{Binding date}" Margin="6,0,0,0" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

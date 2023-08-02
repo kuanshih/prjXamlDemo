@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.PracticeView.PgstockEditor"
+             Title="PgstockEditor">
+    <VerticalStackLayout>
+        <Label 
+            Text="股票系統"
+            FontSize="30"
+            TextColor="DarkSlateGrey"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="編號" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry  x:Name="txtID" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <Label Text="名稱" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry  x:Name="txtName" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <Label Text="價錢" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry  x:Name="txtPrice" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <ImageButton Clicked="btnfirst_Clicked" Source="first" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnPrevious_Clicked" Source="previous" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnNext_Clicked" Source="next" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnLast_Clicked" Source="last" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnSearch_Clicked" Source="search" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnList_Clicked" Source="context" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

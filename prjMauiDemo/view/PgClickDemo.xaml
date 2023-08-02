@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.NewFolder1.PgClickDemo"
+             Title="PgClickDemo">
+    <VerticalStackLayout>
+        <Label 
+            Text="一元二次方程式計算機"
+            FontSize="25"
+            Background="DarkOrange"
+            
+            HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal">
+            <Entry 
+                x:Name="a"
+                FontSize="25"
+                Margin="10,0,0,0"
+                TextColor="Aquamarine"
+                HorizontalOptions="Start"
+               VerticalOptions="FillAndExpand"/>
+            <Label Text=" X2 +" FontSize=" 25"/>
+            <Entry 
+                x:Name="b"
+                FontSize="25"
+                TextColor="Aquamarine"
+                HorizontalOptions="Start"
+               VerticalOptions="FillAndExpand"/>
+            <Label Text=" X +" FontSize=" 25"/>
+            <Editor 
+                x:Name="c"
+                FontSize="25"
+                TextColor="Aquamarine"
+                HorizontalOptions="Start"
+               VerticalOptions="FillAndExpand"/>
+            <Label Text=" = 0" FontSize=" 25"
+                   />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text=" 確定"
+               HorizontalOptions="Start" 
+                Clicked="Cul_Clicked"
+                    Margin="10,0,10,0"/>
+            <Label 
+                x:Name="result"
+                Text=" 解答: " FontSize=" 25" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

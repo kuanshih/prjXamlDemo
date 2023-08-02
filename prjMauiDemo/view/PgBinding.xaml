@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.view.PgBinding"
+             Title="PgBinding">
+    <VerticalStackLayout>
+        <Label 
+            Text="Hello"
+            FontSize="30"
+            x:Name="labHello"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Slider x:Name="slider"
+                Minimum="1"
+                Maximum="100"
+                VerticalOptions="CenterAndExpand"
+                Value="{Binding Source={x:Reference labHello},Path=FontSize}"/><!--靜態繫結-->
+        <Slider x:Name="Slider2"
+                Minimum="0"
+                Maximum="2"
+                VerticalOptions="CenterAndExpand"
+                Value="{Binding Source={x:Reference labHello},Path=Opacity}"/>
+    </VerticalStackLayout>
+</ContentPage>

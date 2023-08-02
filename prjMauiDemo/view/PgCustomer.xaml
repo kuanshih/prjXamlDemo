@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:crm="clr-namespace:prjMauiDemo.ViewModel"
+             x:Class="prjMauiDemo.view.PgCustomer"
+             Title="PgCustomer">
+
+    <ContentPage.BindingContext>
+        <crm:CCustomerViewModel/>
+    </ContentPage.BindingContext>
+
+
+    <VerticalStackLayout>
+        <Label 
+            Text="客戶資料ㄧ覽表"
+            FontSize="30"
+            TextColor="Bisque"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="編號" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry Text="{Binding current.Id,Mode=TwoWay}" x:Name="txtID" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <Label Text="姓名" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry Text="{Binding current.Name,Mode=TwoWay}" x:Name="txtName" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <Label Text="電話" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry Text="{Binding current.phone,Mode=TwoWay}" x:Name="txtPhone" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <Label Text="電子郵件" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry  Text="{Binding current.email,Mode=TwoWay}" x:Name="txtEmail" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <Label Text="地址" FontSize="20" HorizontalOptions="FillAndExpand" />
+        <Entry  Text="{Binding current.address,Mode=TwoWay}" x:Name="txtAddress" FontSize="20" HorizontalOptions="FillAndExpand"/>
+        <StackLayout Orientation ="Horizontal" HorizontalOptions="FillAndExpand">
+            <ImageButton Clicked="btnList_Clicked" Source="context" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="first_Clicked" Source="first" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked ="btnPrevious_Clicked" Source="previous" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnNext_Clicked" Source="next" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked ="btnLast_Clicked" Source="last" HorizontalOptions="FillAndExpand"/>
+            <ImageButton Clicked="btnSearch_Clicked"  Source="search" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

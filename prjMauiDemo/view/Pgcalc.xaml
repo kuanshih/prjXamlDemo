@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prjMauiDemo.view.Pgcalc"
+             Title="Pgcalc">
+    <StackLayout>
+        <Label 
+            Text="計算機範例"
+            FontSize="30"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="0"
+            FontSize="70"
+            x:Name="labNumber"
+            VerticalOptions="Center" 
+            HorizontalOptions="End" />
+        <Grid VerticalOptions="FillAndExpand" 
+>
+            <Grid.RowDefinitions >
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Clicked="Number_Click" Grid.Column="0" Grid.Row="0" Text="7"  FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"  />
+            <Button Clicked="Number_Click" Grid.Column="1" Grid.Row="0" Text="8" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="2" Grid.Row="0" Text="9" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="onOperater_Clicked" Grid.Column="3" Grid.Row="0" Text="+" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="0" Grid.Row="1" Text="4"  FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="1" Grid.Row="1" Text="5" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="2" Grid.Row="1" Text="6" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="onOperater_Clicked" Grid.Column="3" Grid.Row="1" Text="-" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="0" Grid.Row="2" Text="1"  FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="1" Grid.Row="2" Text="2" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="2" Grid.Row="2" Text="3" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="onOperater_Clicked" Grid.Column="3" Grid.Row="2" Text="x" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked ="Equal_Clicked" Grid.Column="0"  Grid.ColumnSpan="2"  Grid.Row="3" Text=" ="  FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="Number_Click" Grid.Column="2" Grid.Row="3" Text="0" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+            <Button Clicked="onOperater_Clicked"  Grid.Column="3" Grid.Row="3" Text="/" FontSize="30" HorizontalOptions="Fill" VerticalOptions="Fill"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
